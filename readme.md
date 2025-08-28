@@ -34,6 +34,7 @@ Due to confidentiality requirements, some documents are not public and have not 
 Uploaded files structure is as follows:
 
 ```
+Stress-and-Strain-AI-Identification-of-Spacecraft-Parts
 ├── make_dataset                            # Make datasets to train AI
     ├── part_configuration.xml              # Settings for making datasets
     └── ...                         
@@ -77,6 +78,7 @@ Uploaded files structure is as follows:
 ## License
 
 This code is provided for educational and research purposes.
+
 
 
 
