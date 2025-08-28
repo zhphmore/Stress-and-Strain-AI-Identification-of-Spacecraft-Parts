@@ -1,0 +1,9 @@
+# ---- runtime ----
+os
+xml
+numpy
+pandas
+torch
+pyvista
+pyvistaqt
+PyQt5
