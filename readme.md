@@ -1,17 +1,31 @@
 # Stress and Strain AI Identification of Spacecraft Parts
 
-This Project belongs to Beijing Institute of Spacecraft Environment Engineering (BISEE), cooperated with College of Engineering Peking University.
+This Project belongs to Beijing Institute of Spacecraft Environment Engineering (BISEE), cooperated with College of Engineering, Peking University.
 
 The code was developed by P.H. Zhang (2025).
 
 ## Background
 
-The development of spacecraft represents the progress of modern society. Due to the unique characteristics of spacecraft motion and the space environment, high requirements are proposed on spacecraft parts. A key step during spacecraft part design is to quickly calculate the most dangerous location on part and overall stress and strain distribution under given working conditions.
+The development of spacecraft represents the progress of modern society. Due to the unique characteristics of spacecraft motion and the space environment, high requirements are proposed on spacecraft parts. A key step during spacecraft part design is to quickly locate the dangerous zone on part and acquire overall stress and strain distribution under given working conditions.
 
 Traditional methods use simulation software such as Abaqus to solve the problem. However, simulation software are slow, cumbersome, and having high learning threshold. A new approach is to use neural networks as surrogation of simulation software, which has high computational efficiency, significantly reduce time costs.
 
+## Abstract
+
+In this project, we have two aircraft parts, named Large Part and Small Part. The structure of parts keep confidential. Each part is attached with several strain gauges. The location of strain gauges are fixed and the strain of them can be accurately measured. Actually, The strain of strain gauges are the only information we can get. We aim to design a program, taking the strain of strain gauges only as input, to output stress and strain at every location throughout the part.
+
+We trained two neural networks as AI model to solve the problem, named NNA and NNB. This two neural networks work in series. NNA takes the strain of strain gauges only as input, and outputs the external load of the part. NNB takes the output of NNA as input, which is the external load of the part, and outputs stress and strain at every location throughout the part.
+
+We choose Abaqus for simulation to generate dataset for each part. We used parallelization to accelerate simulation and obtained tens of thousands of data. The datasets are abundant enough to train AI model.
+
+We designed a humanized interface which encapsulates the above functions. As long as obtaining the strain of the strain gauges measured by device, the AI ​​model can immediately calculate the external load and stress strain distribution of the part. Then the stress and strain cloud map will be immediately drawn on the interface, while inidcating the location with the maximum stress.
+
 ## Overview
 
+- **Spacecraft parts**: Two parts in total, Large Part and Small Part.
+- **Datasets**: (*/make_dataset*) Abaqus simulation to make datasets. Run Abaqus in bash without GUI and use parallelization to quickly generate data.
+- **AI model**: (*/neural network*) Two sequential neural networks. From the strain of the strain gauges to external load, from external load to stress and strain distribution.
+- **User interface**: (*/UI*) QtDesigner to design UI. PyQt5 to write code.
 
 ## File Structure
 
@@ -45,10 +59,20 @@ Uploaded files structure is as follows:
     ├── input.xml                           # Example of an input xml file
     ├── sample_large_part.txt               # Evaluation of output of program
     └── ...
-├── pyproject.toml                          # Package installation
-├── requirements.txt                        # Python dependencies
 └── readme.md                               # This file  
 ```
+
+## Datasets
+
+## AI model
+
+![neural network B of Large Part.png](./neural_network/NN_large_B/NN_large_B_1.png)
+
+![neural network B of Large Part.png](./neural_network/NN_large_B/NN_large_B_2.png)
+
+## UI
+
+![UI structure](./UI/UI_1.png)
 
 ## License
 
