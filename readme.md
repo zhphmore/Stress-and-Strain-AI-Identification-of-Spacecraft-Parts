@@ -66,15 +66,16 @@ Uploaded files structure is as follows:
 
 ## AI model
 
-![neural network B of Large Part.png](./neural_network/NN_large_B/NN_large_B_1.png =x200)
+![neural network B of Large Part.png](./neural_network/NN_large_B/NN_large_B_1.png=x200)
 
-![neural network B of Large Part.png](./neural_network/NN_large_B/NN_large_B_2.png =x200)
+![neural network B of Large Part.png](./neural_network/NN_large_B/NN_large_B_2.png=x200)
 
 ## UI
 
-![UI structure](./UI/UI_1.png =x200)
+![UI structure](./UI/UI_1.png=x200)
 
 ## License
 
 This code is provided for educational and research purposes.
+
 
