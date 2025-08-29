@@ -84,7 +84,7 @@ For each part, two neural networks are trained as AI model to solve the problem,
 
 $$
 \mathbf{C} \in \mathbb{R}^{k}
-\overset{neural \quad network \quad A}{\longrightarrow}
+\overset{NNA}{\longrightarrow}
 (\mathbf{F}, \mathbf{M})^\top \in \mathbb{R}^{2 \times 3}
 $$
 
@@ -107,7 +107,7 @@ $$
 
 $$
 (\mathbf{F}, \mathbf{M})^\top \in \mathbb{R}^{2 \times 3}
-\overset{neural \quad network \quad B}{\longrightarrow}
+\overset{NNB}{\longrightarrow}
 (\mathbf{S}, \mathbf{E})^\top \in (\mathbb{R}^{n \times 1}, \mathbb{R}^{n \times 6})^\top
 $$
 
@@ -133,6 +133,7 @@ $$
 ## License
 
 This code is provided for educational and research purposes.
+
 
 
 
