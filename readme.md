@@ -89,11 +89,17 @@ $$
 $$
 
 - **Input of NNA**: $\mathbf{C}$ is the strain of strain gauges. $k$ is the number of strain gauges on part. It is noteworthy that each strain gauge can only measure one direction of axes. So $\mathbf{C} \in \mathbb{R}^{k}$, $\mathbf{C} \notin \mathbb{R}^{k \times 3}$. Precisely, the output only contains $k$ values. For Large Part, $k=8$. For Small Part, $k=6$.
-$$ \mathbf{C} = (c^1, c^2, ...,c^k)^\top \in \mathbb{R}^{k}$$
+$$
+\mathbf{C} = (c^1, c^2, ...,c^k)^\top \in \mathbb{R}^{k}
+$$
 
 - **Output of NNA**: $(\mathbf{F}, \mathbf{M})^\top$ is external load. $\mathbf{F}$ is the total external force and $\mathbf{M}$ is the total external moment. Force and moment have 3 directions of axes so that $\mathbf{F} \in \mathbb{R}^{3}$ and $\mathbf{M} \in \mathbb{R}^{3}$. Precisely, the output only contains 6 values.
-$$ \mathbf{F} = (F_x, F_y, F_z)^\top \in \mathbb{R}^{3} $$
-$$ \mathbf{M} = (M_x, M_y, M_z)^\top \in \mathbb{R}^{3} $$
+$$
+\mathbf{F} = (F_x, F_y, F_z)^\top \in \mathbb{R}^{3}
+$$
+$$
+\mathbf{M} = (M_x, M_y, M_z)^\top \in \mathbb{R}^{3}
+$$
 
 **neural network B (NNB)**:
 
@@ -107,8 +113,12 @@ $$
 
 - **Output of NNB**: The output contains $\mathbf{S}$ is the mises stress and $\mathbf{E}$ is the six components of strain. $n$ is the number of elements on mesh of the part. It is noteworthy that the mises stress and strain are defined on element instead of node in this project. Precisely, the mises stress and strain are defined at the centroid location of element. Mises stress has no direction but strain has six components with directions. The output contains a large number of values, $7n$ values in total, far exceeding the input.
 
-$$ \mathbf{S} = (s^1, s^2, ...,s^n)^\top \in \mathbb{R}^{n \times 1} $$
-$$ \mathbf{E} = ((e^1_x, e^1_y, e^1_z, e^1_{xy}, e^1_{yz}, e^1_{zx},)^\top, ...,(e^n_x, e^n_y,..., e^n_{zx},)^\top)^\top \in \mathbb{R}^{n \times 6} $$
+$$
+\mathbf{S} = (s^1, s^2, ...,s^n)^\top \in \mathbb{R}^{n \times 1}
+$$
+$$
+\mathbf{E} = ((e^1_x, e^1_y, e^1_z, e^1_{xy}, e^1_{yz}, e^1_{zx},)^\top, ...,(e^n_x, e^n_y,..., e^n_{zx},)^\top)^\top \in \mathbb{R}^{n \times 6}
+$$
 
 <p align="center"><img src="./neural_network/NN_large_B/NN_large_B_1.png" alt="neural network B of Large Part" height="350"></p>
 
@@ -121,6 +131,7 @@ $$ \mathbf{E} = ((e^1_x, e^1_y, e^1_z, e^1_{xy}, e^1_{yz}, e^1_{zx},)^\top, ...,
 ## License
 
 This code is provided for educational and research purposes.
+
 
 
 
