@@ -82,6 +82,8 @@ We write robust python code to quickly make datatset. Run Abaqus without GUI and
 
 The dataset making code is available in *./make_dataset*.
 
+Due to confidentiality requirements, we cannot disclose datasets publicly, only code is available.
+
 ## AI model
 
 ### Input and output of neural networks
@@ -184,4 +186,5 @@ The logical flowchart of this project is as follows.
 ## License
 
 This code is provided for educational and research purposes.
+
 
