@@ -1,6 +1,4 @@
 # ---- runtime ----
-xml
-csv
 numpy
 pandas
 matplotlib
