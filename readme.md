@@ -12,7 +12,7 @@ Traditional methods use simulation software such as Abaqus to solve the problem.
 
 In this project, we have two aircraft parts, named Large Part and Small Part. The structure of parts keep confidential. Each part is attached with several strain gauges. The location of strain gauges are fixed and the strain of them can be accurately measured. Actually, The strain of strain gauges are the only information we can get. We aim to design a program, taking the strain of strain gauges only as input, to output stress and strain at every location throughout the part.
 
-We trained two neural networks as AI model to solve the problem, named NNA and NNB. This two neural networks work in series. NNA takes the strain of strain gauges only as input, and outputs the external load of the part. NNB takes the output of NNA as input, which is the external load of the part, and outputs stress and strain at every location throughout the part.
+We trained two neural networks as AI surrogate model to solve the problem, named NNA and NNB. This two neural networks work in series. NNA takes the strain of strain gauges only as input, and outputs the external load of the part. NNB takes the output of NNA as input, which is the external load of the part, and outputs stress and strain at every location throughout the part.
 
 We choose Abaqus for simulation to generate dataset for each part. We used parallelization to accelerate simulation and obtained tens of thousands of data. The datasets are abundant enough to train AI model.
 
@@ -194,6 +194,7 @@ The logical flowchart of this project is as follows.
 ## License
 
 This code is provided for educational and research purposes.
+
 
 
 
