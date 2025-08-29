@@ -142,7 +142,7 @@ The detailed structure of neural networks, the train and test code is available 
 
 The structure of neural network A is as follows. The network is stacked with 6 MLP layers.
 
-<p align="center"><img src="./neural_network/NN_large_A/NN_large_A_1.png" alt="neural network B of Large Part" height="350"></p>
+<p align="center"><img src="./neural_network/NN_large_A/NN_large_A_1.png" alt="neural network B of Large Part" height="300"></p>
 
 #### **Neural network B (NNB)**
 
@@ -150,11 +150,11 @@ Considering practical demands, not all elemental stress and strain are necessary
 
 The massive output of network can make it difficult to train. To reduce the output of network while enhancing its physical meaning. We split the network into two subnetworks to separately calculate stress and strain. Furthermore, we split the subnetwork by elemental region on part. Finally, we get $2R$ subnetworks, which forms the neural network B.
 
-<p align="center"><img src="./neural_network/NN_large_B/NN_large_B_1.png" alt="neural network B of Large Part" height="350"></p>
+<p align="center"><img src="./neural_network/NN_large_B/NN_large_B_1.png" alt="neural network B of Large Part" height="300"></p>
 
 The structure of the subnetwork of neural network B is as follows. Each subnetwork is stacked with 10 MLP layers.
 
-<p align="center"><img src="./neural_network/NN_large_B/NN_large_B_2.png" alt="neural network B of Large Part" height="350"></p>
+<p align="center"><img src="./neural_network/NN_large_B/NN_large_B_2.png" alt="neural network B of Large Part" height="300"></p>
 
 In fact, among key elements, a handful of elements are very important, because they are in the most vulnerable position of the part. We named them core elements whose stress and strain we must pay more attention to. In this project, $n=948$ core elements distributed on 8 regions for Large Part and $n=481$ core elements distributed on 4 regions for Small Part. We also trained similar but smaller neural network B specially for core elements.
 
@@ -185,11 +185,12 @@ The UI is  displayed as follows.
 
 The logical flowchart of this project is as follows.
 
-<p align="center"><img src="./UI/UI_3.png" alt="UI structure" height="450"></p>
+<p align="center"><img src="./UI/UI_3.png" alt="UI structure" height="400"></p>
 
 ## License
 
 This code is provided for educational and research purposes.
+
 
 
 
