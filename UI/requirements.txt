@@ -1,5 +1,4 @@
 # ---- runtime ----
-xml
 numpy
 pandas
 torch
