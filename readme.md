@@ -160,10 +160,12 @@ In fact, among key elements, a handful of elements are very important, because t
 
 ### Evaluation
 
+<div align="center">
 | Part | MAPE of NNA | MAPE of max mises stress of NNB | MAE of microstrain of NNB
 |:------:|:------:|:------:|:------:|
 | Large Part | 0.55% | 3.51% | 39.92 |
 | Small Part | 1.21% | 2.02% | 25.23 |
+</div>
 
 ## Program
 
@@ -190,6 +192,7 @@ The logical flowchart of this project is as follows.
 ## License
 
 This code is provided for educational and research purposes.
+
 
 
 
