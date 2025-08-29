@@ -84,6 +84,10 @@ The dataset making code is available in *./make_dataset*.
 
 Due to confidentiality requirements, we cannot disclose datasets publicly, only code is available.
 
+### Part information
+
+In this project, the material of the parts is TC4 (Ti-6Al-4V). The structure of parts keep confidential.
+
 ## AI model
 
 ### Input and output of neural networks
@@ -188,6 +192,7 @@ The logical flowchart of this project is as follows.
 ## License
 
 This code is provided for educational and research purposes.
+
 
 
 
