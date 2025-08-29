@@ -3,7 +3,6 @@ import os
 import xml.etree.ElementTree as ET
 import csv
 
-
 # ******************************************************************************** #
 # ******************************************************************************** #
 # CA_simu_list.py
@@ -208,3 +207,4 @@ print('{} generated! : {}'.format(simu_abandon, path_simu_abandon))
 # ********************
 
 print('\nCompleted!')
+
