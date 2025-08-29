@@ -88,12 +88,14 @@ $$
 (\mathbf{F}, \mathbf{M})^\top \in \mathbb{R}^{2 \times 3}
 $$
 
-- **Input of NNA**: $\mathbf{C}$ is the strain of strain gauges. $k$ is the number of strain gauges on part. It is noteworthy that each strain gauge can only measure one direction of axes. So $\mathbf{C} \in \mathbb{R}^{k}$, $\mathbf{C} \notin \mathbb{R}^{k \times 3}$. Precisely, the output only contains $k$ values. For Large Part, $k=8$. For Small Part, $k=6$.
+**Input of NNA**: $\mathbf{C}$ is the strain of strain gauges. $k$ is the number of strain gauges on part. It is noteworthy that each strain gauge can only measure one direction of axes. So $\mathbf{C} \in \mathbb{R}^{k}$, $\mathbf{C} \notin \mathbb{R}^{k \times 3}$. Precisely, the output only contains $k$ values. For Large Part, $k=8$. For Small Part, $k=6$.
+
 $$
 \mathbf{C} = (c^1, c^2, ...,c^k)^\top \in \mathbb{R}^{k}
 $$
 
-- **Output of NNA**: $(\mathbf{F}, \mathbf{M})^\top$ is external load. $\mathbf{F}$ is the total external force and $\mathbf{M}$ is the total external moment. Force and moment have 3 directions of axes so that $\mathbf{F} \in \mathbb{R}^{3}$ and $\mathbf{M} \in \mathbb{R}^{3}$. Precisely, the output only contains 6 values.
+**Output of NNA**: $(\mathbf{F}, \mathbf{M})^\top$ is external load. $\mathbf{F}$ is the total external force and $\mathbf{M}$ is the total external moment. Force and moment have 3 directions of axes so that $\mathbf{F} \in \mathbb{R}^{3}$ and $\mathbf{M} \in \mathbb{R}^{3}$. Precisely, the output only contains 6 values.
+
 $$
 \mathbf{F} = (F_x, F_y, F_z)^\top \in \mathbb{R}^{3}
 $$
@@ -109,9 +111,9 @@ $$
 (\mathbf{S}, \mathbf{E})^\top \in (\mathbb{R}^{n \times 1}, \mathbb{R}^{n \times 6})^\top
 $$
 
-- **Input of NNB**: The same with the output of NNA. $(\mathbf{F}, \mathbf{M})^\top$ is external load. $\mathbf{F}$ is the total external force and $\mathbf{M}$ is the total external moment.
+**Input of NNB**: The same with the output of NNA. $(\mathbf{F}, \mathbf{M})^\top$ is external load. $\mathbf{F}$ is the total external force and $\mathbf{M}$ is the total external moment.
 
-- **Output of NNB**: The output contains $\mathbf{S}$ is the mises stress and $\mathbf{E}$ is the six components of strain. $n$ is the number of elements on mesh of the part. It is noteworthy that the mises stress and strain are defined on element instead of node in this project. Precisely, the mises stress and strain are defined at the centroid location of element. Mises stress has no direction but strain has six components with directions. The output contains a large number of values, $7n$ values in total, far exceeding the input.
+**Output of NNB**: The output contains $\mathbf{S}$ is the mises stress and $\mathbf{E}$ is the six components of strain. $n$ is the number of elements on mesh of the part. It is noteworthy that the mises stress and strain are defined on element instead of node in this project. Precisely, the mises stress and strain are defined at the centroid location of element. Mises stress has no direction but strain has six components with directions. The output contains a large number of values, $7n$ values in total, far exceeding the input.
 
 $$
 \mathbf{S} = (s^1, s^2, ...,s^n)^\top \in \mathbb{R}^{n \times 1}
@@ -131,6 +133,7 @@ $$
 ## License
 
 This code is provided for educational and research purposes.
+
 
 
 
