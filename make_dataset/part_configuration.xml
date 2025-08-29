@@ -3,11 +3,11 @@
     <!--非常重要：part设置小件或大件-->
     <!--若<part>的值为small，将会采用<small>的值；若<part>的值为large，将会采用<large>的值-->
     <part>small</part>
-<!--    <part>large</part>-->
+    <!--<part>large</part>-->
     <!--************************************************************-->
     <!--**********小型零件**********-->
     <small>
-        <path_save>C:/projects/deal/make_dataset/files_small</path_save>
+        <path_save>C:/projects/make_dataset/files_small</path_save>
         <inp>
             <!--模板inp文件名-->
             <inp_template>Job_TMPL_small.inp</inp_template>
@@ -50,7 +50,7 @@
         </FM>
         <job>
             <!--存放inp和odb的文件夹-->
-            <odb_folder>C:/Users/puhan/Desktop/ts_0</odb_folder>
+            <odb_folder>C:/Users/Desktop/ts_0</odb_folder>
             <job_id_start>19001</job_id_start>
             <job_id_end>20000</job_id_end>
             <!--记录不合格的odb-->
@@ -59,19 +59,19 @@
             <odb_KB_down>121000</odb_KB_down>
             <odb_KB_up>121020</odb_KB_up>
             <!--从odb中提取出的大数据集存放的文件夹-->
-            <data_folder>C:/Users/puhan/511/dataset/small_1</data_folder>
+            <data_folder>C:/dataset/small_1</data_folder>
             <!--从odb中提取出的大数据集文件的命名-->
             <data_file_end>_SEY_small.csv</data_file_end>
         </job>
         <NN_A>
             <!--神经网络所需数据集存放位置-->
-            <NN_A_data_folder>C:/Users/puhan/511/dataset/small_data</NN_A_data_folder>
+            <NN_A_data_folder>C:/dataset/small_data</NN_A_data_folder>
             <!--神经网络所需数据集命名-->
             <NN_A_data_file>small_A_data_1.csv</NN_A_data_file>
         </NN_A>
         <NN_B>
             <!--神经网络所需数据集存放位置-->
-            <NN_B_data_folder>C:/Users/puhan/511/dataset/small_data</NN_B_data_folder>
+            <NN_B_data_folder>C:/dataset/small_data</NN_B_data_folder>
             <!--神经网络所需数据集命名-->
             <NN_B_data_S_file>small_B_data_S_R1_1.csv</NN_B_data_S_file>
             <NN_B_data_E_file>small_B_data_E_R1_1.csv</NN_B_data_E_file>
@@ -81,7 +81,7 @@
     </small>
     <!--**********大型零件**********-->
     <large>
-        <path_save>C:/projects/deal/make_dataset/files_large/</path_save>
+        <path_save>C:/projects/make_dataset/files_large/</path_save>
         <inp>
             <inp_template>Job_TMPL_large.inp</inp_template>
             <node_row_start>10</node_row_start>
@@ -109,24 +109,24 @@
             <simu_abandon>simu_abandon_large.csv</simu_abandon>
         </FM>
         <job>
-            <odb_folder>C:/Users/puhan/Desktop/tl_0</odb_folder>
+            <odb_folder>C:/Users/Desktop/tl_0</odb_folder>
             <job_id_start>30001</job_id_start>
             <job_id_end>35000</job_id_end>
             <bug_odb>bug_odb_large_1.txt</bug_odb>
             <odb_KB_down>186600</odb_KB_down>
             <odb_KB_up>186620</odb_KB_up>
-            <data_folder>C:/Users/puhan/511/dataset/large_0</data_folder>
+            <data_folder>C:/dataset/large_0</data_folder>
             <data_file_end>_SEY_large.csv</data_file_end>
         </job>
         <NN_A>
             <!--神经网络所需数据集存放位置-->
-            <NN_A_data_folder>C:/Users/puhan/511/dataset/large_data</NN_A_data_folder>
+            <NN_A_data_folder>C:/dataset/large_data</NN_A_data_folder>
             <!--神经网络所需数据集命名-->
             <NN_A_data_file>large_A_data_1.csv</NN_A_data_file>
         </NN_A>
         <NN_B>
             <!--神经网络所需数据集存放位置-->
-            <NN_B_data_folder>C:/Users/puhan/511/dataset/large_data</NN_B_data_folder>
+            <NN_B_data_folder>C:/dataset/large_data</NN_B_data_folder>
             <!--神经网络所需数据集命名-->
             <NN_B_data_S_file>large_B_data_S_R1_1.csv</NN_B_data_S_file>
             <NN_B_data_E_file>large_B_data_E_R1_1.csv</NN_B_data_E_file>
@@ -134,4 +134,5 @@
             <NN_B_data_E_core_top5_file>large_B_data_E_core_top5_R1_1.csv</NN_B_data_E_core_top5_file>
         </NN_B>
     </large>
+
 </root>
