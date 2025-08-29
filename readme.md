@@ -80,11 +80,11 @@ Stress-and-Strain-AI-Identification-of-Spacecraft-Parts
 
 For each part, two neural networks are trained as AI model to solve the problem, named NNA and NNB.
 
-**neural network A (NNA)**:
+#### **neural network A (NNA)**
 
 $$
 \mathbf{C} \in \mathbb{R}^{k}
-\xrightarrow{neural \: network \: A}
+\overset{neural \quad network \quad A}{\longrightarrow}
 (\mathbf{F}, \mathbf{M})^\top \in \mathbb{R}^{2 \times 3}
 $$
 
@@ -103,11 +103,11 @@ $$
 \mathbf{M} = (M_x, M_y, M_z)^\top \in \mathbb{R}^{3}
 $$
 
-**neural network B (NNB)**:
+#### **neural network B (NNB)**
 
 $$
 (\mathbf{F}, \mathbf{M})^\top \in \mathbb{R}^{2 \times 3}
-\xrightarrow{neural \: network \: B}
+\overset{neural \quad network \quad B}{\longrightarrow}
 (\mathbf{S}, \mathbf{E})^\top \in (\mathbb{R}^{n \times 1}, \mathbb{R}^{n \times 6})^\top
 $$
 
@@ -119,7 +119,7 @@ $$
 \mathbf{S} = (s^1, s^2, ...,s^n)^\top \in \mathbb{R}^{n \times 1}
 $$
 $$
-\mathbf{E} = ((e^1_x, e^1_y, e^1_z, e^1_{xy}, e^1_{yz}, e^1_{zx},)^\top, ...,(e^n_x, e^n_y,..., e^n_{zx},)^\top)^\top \in \mathbb{R}^{n \times 6}
+\mathbf{E} = ((e^1_x, e^1_y, e^1_z, e^1_{xy}, e^1_{yz}, e^1_{zx})^\top, ...,(e^n_x, e^n_y,..., e^n_{zx})^\top)^\top \in \mathbb{R}^{n \times 6}
 $$
 
 <p align="center"><img src="./neural_network/NN_large_B/NN_large_B_1.png" alt="neural network B of Large Part" height="350"></p>
@@ -133,6 +133,7 @@ $$
 ## License
 
 This code is provided for educational and research purposes.
+
 
 
 
