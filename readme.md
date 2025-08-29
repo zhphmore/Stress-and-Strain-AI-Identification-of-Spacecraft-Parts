@@ -1,7 +1,5 @@
 # Stress and Strain AI Identification of Spacecraft Parts
 
-This Project belongs to Beijing Institute of Spacecraft Environment Engineering (BISEE), cooperated with ESCAAS (Beijing) Corporation and Peking University.
-
 The code was developed by P.H. Zhang (2025).
 
 ## Background
@@ -192,6 +190,7 @@ The logical flowchart of this project is as follows.
 ## License
 
 This code is provided for educational and research purposes.
+
 
 
 
