@@ -175,7 +175,7 @@ In fact, among key elements, a handful of elements are very important, because t
 
 The detailed program code is available in *./UI*.
 
-The relationship of program files is as follows. We use QtDesigner to design UI and automatically generate ui and qrc files. Then we use pyuic5 to tranlaste ui files into py files, and use pyrcc5 to tranlaste qrc files into py files. We combine the aforementioned files with other functional files to make final program.
+The relationship of program files is as follows. We use QtDesigner to design UI and automatically generate ui and qrc files. Then we use pyuic5 to tranlaste ui files into py files, and use pyrcc to tranlaste qrc files into py files. We combine the aforementioned files with other functional files to make final program.
 
 <p align="center"><img src="./UI/UI_1.png" alt="UI structure" height="250"></p>
 
@@ -194,6 +194,7 @@ The logical flowchart of this project is as follows.
 ## License
 
 This code is provided for educational and research purposes.
+
 
 
 
