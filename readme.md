@@ -173,14 +173,15 @@ The relationship of program files is as follows. We use QtDesigner to design UI 
 
 The UI is  displayed as follows.
 
-<p align="center"><img src="./UI/UI_4.png" alt="UI structure" height="400"></p>
+<p align="center"><img src="./UI/UI_4.png" alt="UI structure" height="500"></p>
 
 ## Conclusion
 
 The logical flowchart of this project is as follows.
 
-<p align="center"><img src="./UI/UI_3.png" alt="UI structure" height="400"></p>
+<p align="center"><img src="./UI/UI_3.png" alt="UI structure" height="450"></p>
 
 ## License
 
 This code is provided for educational and research purposes.
+
